@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/home.css">
+
+
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"> -->
+   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap"
+      rel="stylesheet">
+
+
+</head>
+
+<body>
+   <div class="productsModelContainer">
+      <a class="productsModel">
+         <div class="productImg">
+            <img clas="itemImg" src="" alt="">
+         </div>
+         <h2 class="itemName"></h2>
+         <div class="descriptionProduct">
+            <h3 class="itemPrice"></h3>
+         </div>
+      </a>
+   </div>
+
+   <div class="productsModelContainer_Modal">
+
+      <div class="productsModel_Modal">
+         <span class="closeModal"><i class="fa-solid fa-xmark"></i></span>
+         <div class="productImg_Modal">
+            <div class="itemImg_Modal">
+               <img class="itemImgPrincipal_Modal" src="" alt="">
+            </div>
+            <div class="itemQuantImg_Modal">
+               <img class="itemImgFront_Modal">
+               <img class="itemImgBack_Modal">
+            </div>
+         </div>
+
+         <div class="descriptionProduct_Modal">
+            <h2 class="itemName_Modal"></h2>
+            <div class="itemBoxPrice_Modal">
+               <h3 class="itemPrice_Modal"></h3>
+               <p class="itemParcelaModal"></p>
+            </div>
+            <div class="itemSize">
+               <h2>Escolha o tamanho:</h2>
+               <button class="btn-item-size extraSmall"></button>
+               <button class="btn-item-size small"></button>
+               <button class="btn-item-size medium"></button>
+               <button class="btn-item-size large"></button>
+               <button class="btn-item-size extraLarge"></button>
+            </div>
+            <div class="form-group">
+               <label class="control-label" for="input-quantity">Qty</label>
+               <input type="text" name="quantity" value="1" size="2" id="input-quantity" class="form-control">
+               <input type="hidden" name="product_id" value="139">
+
+               <button type="button" id="button-cart" data-loading-text="Loading..." class="btn button button-cart"
+                  title="Add to Cart">Add carrinho</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <main class="main containerP">
+      <header class="headerContainer ">
+         <div class="headerBannerContainer">
+            <div class="titleBanner">
+               <h4 class="subtitle">#modaInverno</h4>
+               <h1 class="title">Simplifique</h1>
+               <h1 class="title">Tudo</h1>
+               <a class="btnBanner">Explore Agora</a>
+            </div>
+            <div class="imgBanner">
+               <img src="./assets/img/slider-feminino.jpg" alt="">
+            </div>
+         </div>
+         <nav class="navbar">
+            <ul class="navMenu">
+               <img class="navLogo" src="./assets/img/logo-01.png" alt="">
+               <li><a href="">Início</a></li>
+               <li><a href="">Feminino</a></li>
+               <li><a href="">Masculino</a></li>
+               <li><a href="">Moletons</a></li>
+               <li><a href="">Promoções</a></li>
+            </ul>
+            <ul class="navUserCart">
+               <li><a href="#" class="searchModal fa-solid fa-magnifying-glass"></a></li>
+               <li>
+                  <div class="cartModal">
+                     <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+               </li>
+            </ul>
+         </nav>
+      </header>
+      <div class="productsBox">
+
+      </div>
+   </main>
+
+   <script src="https://kit.fontawesome.com/2113f468da.js" crossorigin="anonymous"></script>
+   <script src="./js/global.js"></script>
+   <script src="./js/data.js"></script>
+   <script src="./js/products.js"></script>
+</body>
+
+</html>
