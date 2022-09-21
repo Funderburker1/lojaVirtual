@@ -76,7 +76,9 @@
 
    <main class="main containerP">
       <header class="headerContainer ">
-         <div class="headerBannerContainer">
+
+
+         <div class="headerBannerContainer mySlides">
             <div class="titleBanner">
                <h4 class="subtitle">#modaInverno</h4>
                <h1 class="title">Simplifique</h1>
@@ -87,6 +89,40 @@
                <img src="./assets/img/slider-feminino.jpg" alt="">
             </div>
          </div>
+         <div class="headerBannerContainer mySlides">
+            <div class="titleBanner">
+               <h4 class="subtitle">#modaInverno</h4>
+               <h1 class="title">Inverno</h1>
+               <h1 class="title">Moda 2022</h1>
+               <a class="btnBanner">Explore Agora</a>
+            </div>
+            <div class="imgBanner">
+               <img src="./assets/img/slider-masculino.jpg" alt="">
+            </div>
+         </div>
+         <div class="headerBannerContainer mySlides">
+            <div class="titleBanner">
+               <h4 class="subtitle">#Tênis</h4>
+               <h1 class="title">Nova coleção</h1>
+               <h1 class="title">ss-2022</h1>
+               <a class="btnBanner">Explore Agora</a>
+            </div>
+            <div class="imgBanner">
+               <img src="./assets/img/slider-Infatil.jpg" alt="">
+            </div>
+         </div>
+         <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+         <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+
+         <div class="bannerCategoryActive">
+            <span class="dot" onclick='currentSlide(1)'>Feminino</span>
+            <span class="row"></span>
+            <span class="dot" onclick='currentSlide(2)'>Masculino</span>
+            <span class="row"></span>
+            <span class="dot" onclick='currentSlide(3)'>Infantil</span>
+            <!-- <span class="dot" onclick='currentSlide(4)'></span> -->
+         </div>
+
          <nav class="navbar">
             <ul class="navMenu">
                <img class="navLogo" src="./assets/img/logo-01.png" alt="">
