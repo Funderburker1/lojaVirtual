@@ -7,9 +7,19 @@
    list-style: none;
 }
 
-/* .containerP {
-   padding: 0 7rem;
-} */
+.left {
+   display: flex;
+   justify-content: left;
+}
+
+.right {
+   display: flex;
+   justify-content: right;
+}
+
+.containerP {
+   padding: 0 8rem;
+}
 
 .productsModelContainer {
    display: none;
@@ -284,13 +294,11 @@
    font-size: 800;
    opacity: 60%;
    color: rgb(51, 51, 51);
-   ;
 }
 
 .active,
 .dot:hover {
    border-bottom: 2px solid rgb(51, 51, 51);
-   ;
    opacity: 100%;
 }
 
