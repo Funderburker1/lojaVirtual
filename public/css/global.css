@@ -5,6 +5,11 @@
    /* font-family: 'Libre Franklin', sans-serif; */
    font-family: 'Nunito Sans', sans-serif;
    list-style: none;
+   text-decoration: none;
+}
+
+a:visited {
+   color: inherit;
 }
 
 .left {
