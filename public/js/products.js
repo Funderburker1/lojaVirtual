@@ -23,7 +23,7 @@ function btnClose() {
    })
 }
 
-//produtos masculino
+
 function preencherDadosProdutos(shopItem, item) {
    shopItem.querySelector('.productsModel img').src = item.img.front;
    shopItem.querySelector('.productsModel .itemName').innerHTML = item.name;
@@ -44,6 +44,7 @@ function preencherDadosProdutos_Modal(item) {
    document.querySelector('.itemSize .extraLarge').innerText = item.size.size_gg;
 }
 
+//produtos masculino
 manProducts.map((item, id) => {
    let shopItem = document.querySelector(".productsModel").cloneNode(true);
    document.querySelector('#manProducts').append(shopItem);
@@ -55,34 +56,12 @@ manProducts.map((item, id) => {
       openModal()
 
       preencherDadosProdutos_Modal(item)
-
    })
 
    btnClose()
 })
 
 //produtos femininos
-
-function preencherDadosProdutos(shopItem, item) {
-   shopItem.querySelector('.productsModel img').src = item.img.front;
-   shopItem.querySelector('.productsModel .itemName').innerHTML = item.name;
-   shopItem.querySelector('.productsModel .itemPrice').innerHTML = `R$ ${item.regular_price.toFixed(2).toString().replace('.', ',')}`;
-}
-
-function preencherDadosProdutos_Modal(item) {
-   document.querySelector('.productsModel_Modal img').src = item.img.front;
-   document.querySelector('.itemImgFront_Modal').setAttribute('src', item.img.front);
-   document.querySelector('.itemImgBack_Modal').setAttribute('src', item.img.back);
-   document.querySelector('.productsModel_Modal .itemName_Modal').innerHTML = item.name;
-   document.querySelector('.descriptionProduct_Modal .itemPrice_Modal').innerHTML = `R$ ${item.regular_price.toFixed(2).toString().replace('.', ',')}`;
-   document.querySelector('.descriptionProduct_Modal .itemParcelaModal').innerHTML = `em até 3x R$ ${(item.regular_price / 3).toFixed(2).toString().replace('.', ',')}`;
-   document.querySelector('.itemSize .extraSmall').innerText = item.size.size_pp;
-   document.querySelector('.itemSize .small').innerText = item.size.size_p;
-   document.querySelector('.itemSize .medium').innerText = item.size.size_m;
-   document.querySelector('.itemSize .large').innerText = item.size.size_g;
-   document.querySelector('.itemSize .extraLarge').innerText = item.size.size_gg;
-}
-
 womanProducts.map((item, id) => {
    let shopItem = document.querySelector(".productsModel").cloneNode(true);
    document.querySelector('#womanProducts').append(shopItem);
@@ -94,7 +73,6 @@ womanProducts.map((item, id) => {
       openModal()
 
       preencherDadosProdutos_Modal(item)
-
    })
 
    btnClose()
