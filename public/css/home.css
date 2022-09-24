@@ -234,7 +234,7 @@ body {
 }
 
 .main .productsSection .navTabsProductsContainer .navTabsProducts {
-   width: 100%;
+   /* width: 100%; */
    /* background-color: yellowgreen; */
    display: flex;
    align-self: start;
@@ -338,7 +338,6 @@ body {
    text-transform: uppercase;
    font-weight: 800;
 }
-
 
 .main .banner2 .banner2Title p {
    letter-spacing: 0.7em;
@@ -451,4 +450,124 @@ body {
    opacity: 80%;
    transform: scale(1.1);
    transition: all .4s;
+}
+
+
+
+@media (max-width: 1250px) {
+   .main .headerContainer .navbar {
+
+      padding: 0 3rem;
+
+   }
+}
+
+@media (max-width: 1024px) {
+   .main .headerContainer .navbar {
+      display: none;
+   }
+
+   .main .headerContainer .navbarModal {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      padding: 1.5rem 1rem;
+      color: rgb(51, 51, 51);
+      /* background-color: #ffffff; */
+   }
+
+   .main .headerContainer .navbarModal #openMenuModal,
+   .cartModal {
+      font-size: 1.8rem;
+      cursor: pointer;
+   }
+
+   .menuBurguer .navMenuBurguer {
+      display: none;
+      width: 30%;
+      height: 100vh;
+      background-color: #242424;
+      position: absolute;
+      color: #fff;
+      top: 0;
+      left: 0;
+      z-index: 10;
+   }
+
+   .main .headerContainer .navbarModal .logoMobile {}
+
+   .productsModel {
+      width: 100%;
+   }
+
+   .main .headerContainer {
+      margin-bottom: 1rem;
+   }
+
+   .main .headerContainer .headerBannerContainer {
+      justify-content: center;
+   }
+
+   .main .headerContainer .headerBannerContainer .titleBanner {
+      position: absolute;
+      z-index: 10;
+   }
+
+   .main .headerContainer .headerBannerContainer .imgBanner {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   .main .headerContainer .imgBanner img {
+      opacity: 40%;
+   }
+
+   .main .productsSection {
+      width: 100%;
+      /* background-color: red; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem;
+   }
+
+   .main .productsSection .bannerProducts {
+      margin: 5rem;
+      width: 100%;
+   }
+
+   .main .productsSection .bannerProducts h1 {
+      font-size: 3rem;
+   }
+
+   .main .productsSection .bannerProducts .bannerImg .btnBannerProducts {
+      font-size: 0.75rem;
+      padding: 3.5% 4%;
+   }
+
+   .main .productsSection .navTabsProductsContainer {
+      width: 100%;
+   }
+
+   .main .productsSection .navTabsProductsContainer .navTabsProducts {
+      gap: 1rem;
+      margin: 2rem;
+   }
+
+   .productsBox {
+      justify-content: center;
+   }
+
+   .main .banner {
+      margin: 4rem 0;
+   }
+
+   .main .footer {
+      padding: 2rem 2rem;
+   }
 }

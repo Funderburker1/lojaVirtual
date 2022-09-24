@@ -8,6 +8,10 @@
    text-decoration: none;
 }
 
+.row-reverse {
+   flex-direction: row-reverse;
+}
+
 a:visited {
    color: inherit;
 }

@@ -67,3 +67,13 @@ resume = () => {
    clearInterval(myTimer);
    myTimer = setInterval(function () { plusSlides(slideIndex) }, 4000);
 }
+
+const menuBurguer = document.querySelector('.menuBurguer .navMenuBurguer');
+
+const openMenuModal = document.querySelector('#openMenuModal').addEventListener('click', () => {
+   menuBurguer.style.display = "block";
+});
+
+const closeMenuModal = document.querySelector('#closeMenuModal').addEventListener('click', () => {
+   menuBurguer.style.display = "none";
+});
